@@ -10,34 +10,34 @@
     <form method="POST">
         <div>
             <label>Customer Name</label>
-            <inpt type="text"/>
-        </div>
+            <input type="text" name="customer_name"/>
         <div>
             <label>Sitting Type</label>
-            <input type="radio"/>Indoors
-            <input type="radio"/>Outdoors
-            <input type="radio"/>Smoking
+            <input type="radio" value="indoors" name="sitting_type"/>Indoors
+            <input type="radio" value="outdoors" name="sitting_type"/>Outdoors
+            <input type="radio" value="smoking" name="sitting_type"/>Smoking
         </div>
         <div>
             <label>Time</label>
-            <input type="radio"/>Morning
-            <input type="radio"/>Afternoon
-            <input type="radio"/>Evening
+            <input type="radio" value="morning" name="time"/>Morning
+            <input type="radio" value="afternoon" name="time"/>Afternoon
+            <input type="radio" value="Evening" name="time"/>Evening
         </div>
         <div>
             <label>Services</label>
-            <input type="checkbox"/>Wet Napkins
-            <input type="checkbox"/>Free flow drinks
-            <input type="checkbox"/>Baby Seats
+            <input type="checkbox" value="wet-napkins" name="services"/>Wet Napkins
+            <input type="checkbox" value="free-flow-drinks "name="services"/>Free flow drinks
+            <input type="checkbox" value="baby-seats" name="services"/>Baby Seats
         </div>
         <div>
             <label>How did you hear about us</label>
-            <select>
-                <option>Word of mouth</option>
-                <option>Social media</option>
-                <option>Reviews</option>
+            <select name="how_did_you_hear_about_us">
+                <option value="word-of mouth">Word of mouth</option>
+                <option value="social-media">Social media</option>
+                <option value="reviews">Reviews</option>
             </select>
         </div>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
